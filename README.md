@@ -70,6 +70,9 @@ To run the application, you simply need to run the `app.py` script in this repos
 
 - **The Main Configuration:**
 
+## UML Diagram
+![Screenshot 2023-08-31 at 15 49 26](https://github.com/Emre1Duman/Web-App-DevOps-Project/blob/main/UML.png)
+
 ## Contributors 
 
 - [Maya Iuga]([https://github.com/yourusername](https://github.com/maya-a-iuga))
