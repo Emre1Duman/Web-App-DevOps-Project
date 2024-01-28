@@ -20,7 +20,7 @@ Welcome to the Web App DevOps Project repo! This application allows you to effic
   
 ![Screenshot 2023-08-31 at 15 49 08](https://github.com/maya-a-iuga/Web-App-DevOps-Project/assets/104773240/d92a045d-b568-4695-b2b9-986874b4ed5a)
 
-- **Add New Order:** Fill out a user-friendly form to add new orders to the system with necessary information.
+- **Add New Order:** Fill out a user-friendly form to add new orders to the system with the necessary information.
   
 ![Screenshot 2023-08-31 at 15 49 26](https://github.com/maya-a-iuga/Web-App-DevOps-Project/assets/104773240/83236d79-6212-4fc3-afa3-3cee88354b1a)
 
@@ -30,7 +30,7 @@ Welcome to the Web App DevOps Project repo! This application allows you to effic
 
 ### Prerequisites
 
-For the application to succesfully run, you need to install the following packages:
+For the application to successfully run, you need to install the following packages:
 
 - flask (version 2.2.2)
 - pyodbc (version 4.0.39)
@@ -39,7 +39,7 @@ For the application to succesfully run, you need to install the following packag
 
 ### Usage
 
-To run the application, you simply need to run the `app.py` script in this repository. Once the application starts you should be able to access it locally at `http://127.0.0.1:5000`. Here you will be meet with the following two pages:
+To run the application, you simply need to run the `app.py` script in this repository. Once the application starts you should be able to access it locally at `http://127.0.0.1:5000`. Here you will be met with the following two pages:
 
 1. **Order List Page:** Navigate to the "Order List" page to view all existing orders. Use the pagination controls to navigate between pages.
 
@@ -54,6 +54,17 @@ To run the application, you simply need to run the `app.py` script in this repos
 - **Database:** The application employs an Azure SQL Database as its database system to store order-related data.
 
 ## Terraform
+
+- **Network Service Module:** 
+  - Within the Network module, I created 3 files, variables.tf, main.tf and outputs.tf.
+  - Variables.tf contained variables for the Network Resource group name, resource location and Vnet address space.
+  - The main.tf had multiple resources defined using the variables in variables.tf. I defined a resource group, a virtual network (Vnet), which included 2 subnets for the control plane and the worker node. Lastly, a Network Security Group (NSG) was defined with 2 security rules to only allow access to my public IP (IPV4) from the Kube-APiserver and SSH Trafic.
+  - Outputs.tf contained the output variables of the module, to be utilised in later code.
+ 
+- **Cluster Module:**
+  - The 2nd module was for the cluster itself, with this module also including a variables, main and outputs file.
+  - Within the variables.tf file I defined variables for the aks_cluster_name, cluster location, dns_prefix, k8s version, and service principle client/secret ID.
+  - I additionally included the output variables from the networking module as input variables for the new cluster module, these will be useful for when defining the networking resources and configuring the cluster
 
 ## Contributors 
 
