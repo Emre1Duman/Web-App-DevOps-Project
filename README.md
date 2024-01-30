@@ -70,6 +70,15 @@ To run the application, you simply need to run the `app.py` script in this repos
 
 - **The Main Configuration:**
   - The Main file integrates both modules using the associated variables file
+  - After applying the config and successfully provisioning it with Terraform, I need to retrieve the kubeconfig file.
+  - This is done through the Azure CLI with the command "az aks get-credentials --resource-group <Your-Resource-Group-Name> --name <Your-AKS-Cluster-Name>".
+  - To ensure this has worked we use "kubectl get nodes", this command lists the nodes in our AKS cluster, confirming we have successfully connected.
+ 
+## Kubernetes
+
+- We now need to proceed with the deployment of the containerized application to the Kubernetes cluster, for this we require a manifest file.
+
+  
 
 ## UML Diagram
 ![Screenshot 2023-08-31 at 15 49 26](https://github.com/Emre1Duman/Web-App-DevOps-Project/blob/main/UML.png)
