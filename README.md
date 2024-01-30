@@ -66,9 +66,10 @@ To run the application, you simply need to run the `app.py` script in this repos
   - Within the variables.tf file I defined variables for the aks_cluster_name, cluster location, dns_prefix, k8s version, and service principle client/secret ID.
   - I additionally included the output variables from the networking module as input variables for the new cluster module, these will be useful when defining the networking resources and configuring the cluster.
   - I defined the necessary Azure resources for provisioning the cluster itself in the main.tf, this included the AKS cluster, node pool and service principals using the variables defined earlier.
-  - The outputs.tf file contained essential information about the provisioned AKS cluster, including the cluster name, id and aks kubeconfig
+  - The outputs.tf file contained essential information about the provisioned AKS cluster, including the cluster name, ID and AKS kubeconfig
 
 - **The Main Configuration:**
+  - The Main file integrates both modules using the associated variables file
 
 ## UML Diagram
 ![Screenshot 2023-08-31 at 15 49 26](https://github.com/Emre1Duman/Web-App-DevOps-Project/blob/main/UML.png)
