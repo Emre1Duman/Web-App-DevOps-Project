@@ -76,7 +76,7 @@ To run the application, you simply need to run the `app.py` script in this repos
  
 ## Kubernetes
 
-- We now need to proceed with the deployment of the containerized application to the Kubernetes cluster, for this we require a manifest file.
+- We now need to proceed with the deployment of the containerized application to the Kubernetes cluster, for this, we require a manifest file.
 
   
 
