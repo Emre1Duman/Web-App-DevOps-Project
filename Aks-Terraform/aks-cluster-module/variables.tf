@@ -25,14 +25,12 @@ variable "kubernetes_version" {
 variable "service_principle_client_id" {
     description = "Client ID for the service principal associated with the cluster"
     type = string
-    # default = "cc437313-03e4-4c4c-aa87-0a2d38e0012a"
   
 }
 
 variable "service_principle_secret" {
     description = "Client secret for the service principal associated with the cluster"
     type = string
-    # default = "_X58Q~B_iv1Wzta8syHCWHSGS.7iOUQkEbUGEaoG"
   
 }
 
