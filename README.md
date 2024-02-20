@@ -91,6 +91,9 @@ To run the application, you simply need to run the `app.py` script in this repos
   - Within the manifest, we will define the deployment with all the relevant tags, labels, and services.
   - To deploy the manifest to the AKS cluster, the command "kubectl apply -f manifest-file.yaml" is used, while ensuring we are in the right context.
   - To validate the deployment, we verify the status of the pods and services within the AKS Cluster using kubectl and test the web app through port-forwarding.
+ 
+- Shortly, I can improve the project by enabling a native connection through a LoadBalancer service or an Ingress, as this would centralize the routing and simplify the management of external traffic, leading to a more efficient and streamlined DevOps process.
+
 
 - **CI/CD Pipeline Azure DevOps**
   - 
