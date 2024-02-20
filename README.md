@@ -60,6 +60,11 @@ To run the application, you simply need to run the `app.py` script in this repos
 
 ## Terraform:
 
+- Infrastructure as Code (IaC) is a key practice that allows us to automate, standardize, and share infrastructure configurations using code.
+- Terraform allows for improved collaboration, version history, consistency, reusability, and portability across cloud providers like Azure, which is essential for managing complex infrastructure in DevOps environment.
+
+
+
 - **Network Service Module:** 
   - Within the Network module, I created 3 files, variables.tf, main.tf and outputs.tf.
   - Variables.tf contained variables for the Network Resource group name, resource location and Vnet address space.
