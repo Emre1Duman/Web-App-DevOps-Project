@@ -102,6 +102,7 @@ To run the application, you simply need to run the `app.py` script in this repos
 - **Azure:**
   - Upon completing and testing the pipeline, we now need to ensure the cluster runs smoothly.
   - We can create metrics and alerts on Azure via Metrics Explorer.
+  - Lastly, we want to ensure high security within our environment, so I used Azure secrets integrated into my code to enable better security practices.
 
 
   
