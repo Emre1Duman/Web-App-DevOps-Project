@@ -53,7 +53,12 @@ To run the application, you simply need to run the `app.py` script in this repos
 
 - **Database:** The application employs an Azure SQL Database as its database system to store order-related data.
 
-## Terraform
+## Docker:
+- Docker was utilized to containerise our application.
+- The container would be pushed to DockerHub, which would be utilized by the Kubernetes cluster we configure later on
+- Docker is useful in this current environment, as it provides an OS-agnostic solution for building and deploying applications
+
+## Terraform:
 
 - **Network Service Module:** 
   - Within the Network module, I created 3 files, variables.tf, main.tf and outputs.tf.
