@@ -95,8 +95,14 @@ To run the application, you simply need to run the `app.py` script in this repos
 - Shortly, I can improve the project by enabling a native connection through a LoadBalancer service or an Ingress, as this would centralize the routing and simplify the management of external traffic, leading to a more efficient and streamlined DevOps process.
 
 
-- **CI/CD Pipeline Azure DevOps**
-  - 
+## Azure
+- **Azure DevOps:*
+  - As the deployment of the application is complete, we now need to configure a CI/CD pipeline using Azure DevOps.
+  - The pipeline will automate both the containerization and deployment process when a new feature is added, the pipeline will trigger an automatic build of an updated Docker image, the release to Docker Hub, and the deployment of the updated containers to the AKS Cluster.
+- **Azure:**
+  - Upon completing and testing the pipeline, we now need to ensure the cluster runs smoothly.
+  - We can create metrics and alerts on Azure via Metrics Explorer.
+
 
   
 
@@ -106,6 +112,7 @@ To run the application, you simply need to run the `app.py` script in this repos
 ## Contributors 
 
 - [Maya Iuga]([https://github.com/yourusername](https://github.com/maya-a-iuga))
+- Emre Duman
 
 ## License
 
